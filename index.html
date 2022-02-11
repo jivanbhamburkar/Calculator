@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #container {
+            display: flex;
+            justify-content: center;
+        }
+
+        table {
+            border: 8px double black;
+            border-radius: 15px;
+            margin: 10%;
+            height: 400px;
+        }
+
+        button {
+            width: 100%;
+            height: 100%;
+            background-color: rgb(71, 70, 70);
+            font-size: 20px;
+            border-radius: 10px;
+        }
+
+        #clr, #del {
+            width: 100%;
+            background-color: rgb(150, 76, 36);
+        }
+
+        #input {
+            width: 95%;
+            height: 50px;
+            background-color: rgb(102, 159, 178);
+            font-size: 30px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <table>
+            <tr>
+                <th colspan="4"><input id="input" value=""></th>
+
+            </tr>
+            <tr>
+                <td colspan="2"><button id="clr" onclick="reset()">AC</button></td>
+                <td colspan="2"><button id="del" onclick="del()">Del</button></td>
+            </tr>
+            <tr>
+                <td><button id="block9" onclick="clickButton(9)">9</button></td>
+                <td><button id="block8" onclick="clickButton(8)">8</button> </td>
+                <td><button id="block7" onclick="clickButton(7)">7</button></td>
+                <td><button id="plus" onclick="clickButton('+')">+</button></td>
+            </tr>
+            <tr>
+                <td><button id="block6" onclick="clickButton(6)">6</button></td>
+                <td><button id="block5" onclick="clickButton(5)">5</button></td>
+                <td><button id="block4" onclick="clickButton(4)">4</button></td>
+                <td><button id="minus" onclick="clickButton('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button id="block3" onclick="clickButton(3)">3</button></td>
+                <td><button id="block2" onclick="clickButton(2)">2</button></td>
+                <td><button id="block1" onclick="clickButton(1)">1</button></td>
+                <td><button id="multiply" onclick="clickButton('*')">X</button></td>
+
+            </tr>
+            <tr>
+                <td><button id="dot" onclick="clickButton('.')"><b>.</b></button></td>
+                <td><button id="block0" onclick="clickButton(0)">0</button></td>
+                <td><button id="ans" onclick="calc()">=</button></td>
+                <td><button id="divide" onclick="clickButton('/')">/</button></td>
+            </tr>
+            <script src="calc.js"></script>
+        </table>
+    </div>
+
+</body>
+
+</html>
