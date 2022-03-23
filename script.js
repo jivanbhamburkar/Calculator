@@ -16,10 +16,9 @@ function clickButton(val) {
 }
 
 function calc() {
-  if (eval(display.value) != display.value) {
-    display.value = eval(display.value);
-  }
+  display.value = eval(display.value);
 }
+
 
 function reset() {
   display.value = "";
